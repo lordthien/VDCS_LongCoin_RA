@@ -3,7 +3,9 @@ import {Text, View, StatusBar, Image, TouchableOpacity} from 'react-native';
 import {appImage} from '../../Assets/Images';
 import Color from '../../Theme/Color';
 import styles from './styles';
-const Header = () => {
+import PropTypes from 'prop-types';
+
+const Header = ({iconLeft, title, iconRight}) => {
   return (
     <View style={styles.container}>
       <StatusBar
@@ -12,15 +14,21 @@ const Header = () => {
       />
       <View style={styles.headerView}>
         <TouchableOpacity>
-          <Image style={styles.icon} source={appImage.back} />
+          <Image style={styles.icon} source={iconLeft} />
         </TouchableOpacity>
-        <Text style={styles.text}>All Transactions</Text>
+        <Text style={styles.text}>{title}</Text>
         <TouchableOpacity>
-          <Image style={styles.icon} source={appImage.filter} />
+          <Image style={styles.icon} source={iconRight} />
         </TouchableOpacity>
       </View>
     </View>
   );
+};
+
+Header.propTypes = {
+  iconLeft: PropTypes.node,
+  iconRight: PropTypes.node,
+  title: PropTypes.string.isRequired,
 };
 
 export default Header;

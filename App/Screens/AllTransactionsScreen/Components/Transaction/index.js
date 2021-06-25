@@ -1,10 +1,10 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {appImage} from '../../../../assets/Images';
 import styles from './styles';
 const Transaction = ({source, VDCS, VND, action, date}) => {
   return (
-    <View style={styles.container}>
+    <TouchableOpacity style={styles.container}>
       <Image style={styles.icon} source={source} />
       <View style={styles.moneyView}>
         <Text style={styles.VDCSMoney}>{VDCS} VDCS</Text>
@@ -14,7 +14,7 @@ const Transaction = ({source, VDCS, VND, action, date}) => {
         <Text style={styles.actionText}>{action}</Text>
         <Text style={styles.VNDMoney}>{date}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

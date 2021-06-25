@@ -4,6 +4,7 @@ import Header from '../../Components/Header';
 import styles from './styles';
 import Transaction from './Components/Transaction';
 import {appData} from '../../Data';
+import {appImage} from '../../Assets/Images';
 const AllTransactionsScreen = () => {
   const renderItem = ({item, index}) => {
     return (
@@ -18,9 +19,12 @@ const AllTransactionsScreen = () => {
   };
   return (
     <View style={styles.container}>
-      <Header />
+      <Header
+        iconLeft={appImage.back}
+        iconRight={appImage.filter}
+        title={'All Transactions'}
+      />
       <View style={styles.transactionView}>
-        {/* <Transaction /> */}
         <FlatList
           data={appData.transactionData}
           renderItem={renderItem}
