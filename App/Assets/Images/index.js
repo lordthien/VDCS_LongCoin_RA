@@ -5,4 +5,5 @@ export const appImage = {
   deposited: require('./deposited.png'),
   sent: require('./sent.png'),
   loan: require('./loan.png'),
+  external: require('./external-link.png'),
 };

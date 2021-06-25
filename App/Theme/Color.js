@@ -15,7 +15,7 @@ export default {
   tertiary: '#FFE358',
   black: '#000000',
   white: '#FFFFFF',
-  gray: '#9DA3B4',
+  gray: '#B5BBC9',
   gray1: '#808080',
   gray2: '#C5CCD6',
   gray3: '#e0e0e0',
@@ -49,4 +49,5 @@ export default {
   app: '#F18021',
   textTitle: '#0D1F3C',
   textSubtitle: '#485068',
+  orange: '#F18021',
 };

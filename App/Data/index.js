@@ -59,4 +59,60 @@ export const appData = {
       date: 'Aug 19, 2019',
     },
   ],
+  transactionDetails: {
+    date: [
+      {
+        title: 'Date',
+        subtitle: 'May 19, 2021',
+        type: 1,
+      },
+      {
+        title: 'Time',
+        subtitle: '11:38 AM',
+        type: 2,
+      },
+    ],
+    amount: [
+      {
+        title: 'Total Amount',
+        subtitle: 100000,
+        unit: 'VDCS',
+        type: 1,
+      },
+      {
+        title: 'Total Amount (VNĐ)',
+        subtitle: 100000,
+        unit: 'VNĐ',
+        type: 1,
+      },
+      {
+        title: 'Withdrawn fee',
+        subtitle: 0.5,
+        type: 1,
+        unit: 'VDCS',
+      },
+      {
+        title: 'Status',
+        subtitle: 'Transaction confirmed',
+        type: 3,
+      },
+    ],
+    id: [
+      {
+        title: 'Transaction ID',
+        subtitle: '3M8w2knJKsr3jqMatYiyuraxVvZA',
+        type: 1,
+      },
+      {
+        title: 'From',
+        subtitle: '0x0b06d4JH48e5DK3jm4a3af69BnVO51c12i8',
+        type: 1,
+      },
+      {
+        title: 'To',
+        subtitle: '3M8w2knJKsr3jqM3aatYiyuraxVvZAmuZy24lK8',
+        type: 1,
+      },
+    ],
+  },
 };
