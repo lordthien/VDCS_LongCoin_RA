@@ -4,8 +4,9 @@ import {pxScale} from '../../Theme/Size';
 
 export default StyleSheet.create({
   container: {
-    // flex: 1,
+    flex: 1,
     backgroundColor: Color.mainbackground,
+    // backgroundColor: 'yellow',
   },
   transactionView: {
     height: pxScale.hp(812),

@@ -115,4 +115,22 @@ export const appData = {
       },
     ],
   },
+  transactionTypeData: [
+    {
+      source: appImage.plusCircle,
+      type: 'Deposited',
+    },
+    {
+      source: appImage.withdrawn,
+      type: 'Withdrawn',
+    },
+    {
+      source: appImage.sent,
+      type: 'Sent',
+    },
+    {
+      source: appImage.plusCircle1,
+      type: 'Pay',
+    },
+  ],
 };

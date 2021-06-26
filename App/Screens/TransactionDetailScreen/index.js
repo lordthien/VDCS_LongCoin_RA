@@ -10,13 +10,14 @@ import styles from './styles';
 const TransactionDetailScreen = () => {
   return (
     <View style={styles.container}>
-      <Header iconLeft={appImage.back} title={'Transaction Details'} />
-      <View style={styles.transactionView}>
-        <View style={styles.iconView}>
-          <Image style={styles.icon} source={appImage.withdrawn} />
-        </View>
-        <Text style={styles.action}>Withdrawn</Text>
-        <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <Header iconLeft={appImage.back} title={'Transaction Details'} />
+        <View style={styles.transactionView}>
+          <View style={styles.iconView}>
+            <Image style={styles.icon} source={appImage.withdrawn} />
+          </View>
+          <Text style={styles.action}>Withdrawn</Text>
+
           <View>
             <View
               style={{
@@ -29,7 +30,7 @@ const TransactionDetailScreen = () => {
                     subtitle={item.subtitle}
                     key={index.toString()}
                     fieldStyle={{
-                      marginTop: pxScale.hp(23),
+                      marginTop: pxScale.hp(15),
                     }}
                     type={item.type}
                   />
@@ -70,10 +71,9 @@ const TransactionDetailScreen = () => {
               buttonText={'Back to Wallet'}
               buttonStyle={{marginTop: pxScale.hp(32)}}
             />
-            <View style={styles.behideButton}></View>
           </View>
-        </ScrollView>
-      </View>
+        </View>
+      </ScrollView>
     </View>
   );
 };

@@ -6,4 +6,7 @@ export const appImage = {
   sent: require('./sent.png'),
   loan: require('./loan.png'),
   external: require('./external-link.png'),
+  plusCircle: require('./plus-circle.png'),
+  plusCircle1: require('./plus-circle-1.png'),
+  tick: require('./tick.png'),
 };

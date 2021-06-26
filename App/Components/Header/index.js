@@ -5,19 +5,20 @@ import Color from '../../Theme/Color';
 import styles from './styles';
 import PropTypes from 'prop-types';
 
-const Header = ({iconLeft, title, iconRight}) => {
+const Header = ({iconLeft, title, iconRight, onPressLeft, onPressRight}) => {
   return (
     <View style={styles.container}>
       <StatusBar
         backgroundColor={Color.mainbackground}
         barStyle={'dark-content'}
+        translucent={true}
       />
       <View style={styles.headerView}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onPressLeft}>
           <Image style={styles.icon} source={iconLeft} />
         </TouchableOpacity>
         <Text style={styles.text}>{title}</Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onPressRight}>
           <Image style={styles.icon} source={iconRight} />
         </TouchableOpacity>
       </View>

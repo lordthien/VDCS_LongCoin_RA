@@ -5,10 +5,10 @@ import {pxScale} from '../../Theme/Size';
 export default StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: Color.mainbackground,
+    // backgroundColor: Color.mainbackground,
   },
   headerView: {
-    marginTop: pxScale.hp(16),
+    marginTop: pxScale.hp(60),
     width: pxScale.wp(334),
     height: pxScale.hp(32),
     backgroundColor: Color.mainbackground,

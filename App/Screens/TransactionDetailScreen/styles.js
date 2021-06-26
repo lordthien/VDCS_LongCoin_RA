@@ -7,7 +7,7 @@ export default StyleSheet.create({
     backgroundColor: Color.mainbackground,
   },
   transactionView: {
-    height: pxScale.hp(1560),
+    height: pxScale.hp(859),
     marginTop: pxScale.hp(68),
     backgroundColor: 'white',
     borderRadius: pxScale.wp(20),
@@ -46,9 +46,5 @@ export default StyleSheet.create({
     borderColor: '#EDEEF1',
     alignSelf: 'center',
     marginTop: pxScale.hp(16),
-  },
-  behideButton: {
-    marginTop: pxScale.hp(94),
-    height: pxScale.hp(150),
   },
 });
