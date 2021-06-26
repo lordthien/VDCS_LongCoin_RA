@@ -91,7 +91,6 @@
 				2C47B6C7C58A550A64F8731D /* Pods-VDCS_longcoin_RA-VDCS_longcoin_RATests.debug.xcconfig */,
 				C53A25B781A51EC7D239C63E /* Pods-VDCS_longcoin_RA-VDCS_longcoin_RATests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -134,6 +133,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0C85E23D65EF8C0EA73BD373 /* Pods */,
+				A878D4BBE82847139E00CC5A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +147,13 @@
 				00E356EE1AD99517003FC87E /* VDCS_longcoin_RATests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A878D4BBE82847139E00CC5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +286,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VDCS_longcoin_RA-VDCS_longcoin_RATests/Pods-VDCS_longcoin_RA-VDCS_longcoin_RATests-resources.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		1BB669F5B51838807C53703E /* [CP] Embed Pods Frameworks */ = {
@@ -311,9 +319,12 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-VDCS_longcoin_RA/Pods-VDCS_longcoin_RA-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VDCS_longcoin_RA/Pods-VDCS_longcoin_RA-resources.sh\"\n";
+			shellScript = "
+";
 			showEnvVarsInLog = 0;
 		};
 		BBC58B3A1476C02369C7DEC3 /* [CP] Embed Pods Frameworks */ = {
@@ -487,6 +498,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VDCS_longcoin_RA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +524,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = VDCS_longcoin_RA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
