@@ -1,9 +1,7 @@
 import React, {useState} from 'react';
 import {
   View,
-  Text,
   TouchableOpacity,
-  Image,
   Modal,
   StatusBar,
   Pressable,
@@ -13,21 +11,16 @@ import {appData} from '../../../../Data';
 import Color from '../../../../Theme/Color';
 import {pxScale} from '../../../../Theme/Size';
 import styles from './styles';
-const FilterModal = ({closeModal, isVisible}) => {
-  const [choice, setChoice] = useState([false, false, false, false]);
-
-  const typeChoice = index => () => {
-    setChoice(choice => {
-      choice[index] = !choice[index];
-      return [...choice];
-    });
-  };
-  const selectAll = () => {
-    setChoice([true, true, true, true]);
-  };
-  const clearAll = () => {
-    setChoice([false, false, false, false]);
-  };
+import {Text, Image} from 'react-native-elements';
+const FilterModal = ({
+  closeModal,
+  isVisible,
+  choiceArray,
+  onPressChoice,
+  selectAll,
+  clearAll,
+}) => {
+  // console.log(choiceArray[3].status);
   return (
     <Modal animationType="fade" transparent={true} visible={isVisible}>
       <View style={styles.containerBig}>
@@ -68,15 +61,24 @@ const FilterModal = ({closeModal, isVisible}) => {
                       styles.choice,
                       {
                         backgroundColor:
-                          choice[index] === false ? null : Color.orange,
-                        borderWidth: choice[index] === 1 ? 0 : pxScale.wp(1),
+                          choiceArray[index].status === false
+                            ? null
+                            : Color.orange,
+                        borderWidth:
+                          choiceArray[index].status === false
+                            ? pxScale.wp(1)
+                            : 0,
                       },
                     ]}
-                    onPress={typeChoice(index)}>
-                    <Image
-                      style={styles.choiceIcon}
-                      source={choice[index] === false ? null : appImage.tick}
-                    />
+                    onPress={() => onPressChoice(index)}
+                    choiceArray={choiceArray}>
+                    {choiceArray[index].status === true && (
+                      <Image
+                        style={styles.choiceIcon}
+                        source={appImage.tick}
+                        // PlaceholderContent={null}
+                      />
+                    )}
                   </TouchableOpacity>
                 </View>
               );
