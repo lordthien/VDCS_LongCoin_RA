@@ -1,22 +1,30 @@
 import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
-import {colors} from '../../theme';
+import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import {colors, images} from '../../theme';
 
-export default function Button({text}) {
+export default function Button({text, images}) {
   return (
     <TouchableOpacity style={styles.buttonBuy}>
+      <Image style={styles.imageContainer} source={images} />
       <Text style={styles.textButton}>{text}</Text>
     </TouchableOpacity>
   );
 }
 
 const styles = StyleSheet.create({
+  imageContainer: {
+    height: 28,
+    width: 108,
+    marginRight: 12,
+    marginLeft: 24,
+  },
   buttonBuy: {
-    width: 200,
+    flexDirection: 'row',
+    width: 339,
     height: 46,
     backgroundColor: colors.app,
     borderRadius: 23,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     marginTop: 26,
   },

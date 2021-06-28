@@ -9,4 +9,7 @@ export default {
   check: require('../assets/image/check.png'),
   vnpay: require('../assets/image/vnpay.png'),
   zalopay: require('../assets/image/zalopay.png'),
+  frame: require('../assets/image/qrcode/frame.png'),
+  scan: require('../assets/image/qrcode/scan.png'),
+  back: require('../assets/image/back.png'),
 };

@@ -4,7 +4,7 @@ import {Text, View, TouchableOpacity, Image, TextInput} from 'react-native';
 import {images} from '../../theme';
 import styles from './styles';
 import MainBackground from '../../component/MainBackground';
-import Button from '../../component/DepositOrBuy/Button';
+import Button from '../../component/DepositOrBuy/ButtonDepositOrBuy';
 
 export default function Buy() {
   return (
