@@ -9,11 +9,11 @@ export default StyleSheet.create({
     flex: 1,
   },
   container: {
-    height: pxScale.hp(419),
+    // height: pxScale.hp(419),
     borderRadius: pxScale.wp(20),
     backgroundColor: 'white',
     paddingHorizontal: pxScale.wp(30),
-    paddingTop: pxScale.hp(30),
+    paddingVertical: pxScale.hp(30),
   },
   title: {
     fontSize: pxScale.fontSize(19),

@@ -7,11 +7,11 @@ export default StyleSheet.create({
     backgroundColor: Color.mainbackground,
   },
   transactionView: {
-    height: pxScale.hp(859),
+    // height: pxScale.hp(859),
     marginTop: pxScale.hp(68),
     backgroundColor: 'white',
     borderRadius: pxScale.wp(20),
-    paddingTop: pxScale.hp(22),
+    paddingVertical: pxScale.hp(22),
     // alignItems: 'center',
     // paddingLeft: pxScale.wp(32),
   },
