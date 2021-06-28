@@ -1,21 +1,14 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  TouchableOpacity,
-  Image,
-  ImageBackground,
-} from 'react-native';
-import {colors, images} from '../../theme';
+import {Text, View, TouchableOpacity, Image} from 'react-native';
+import {images} from '../../theme';
 import styles from './styles';
+import MainBackground from '../../component/MainBackground';
+import Button from '../../component/DepositOrBuy/Button';
 
 export default function DepositOrBuy() {
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={images.background}
-        style={styles.backgroundContainer}
-      />
+      <MainBackground />
 
       <View style={styles.depositContainer}>
         <TouchableOpacity>
@@ -48,9 +41,7 @@ export default function DepositOrBuy() {
           </TouchableOpacity>
         </View>
         <View style={styles.bottomContainer}>
-          <TouchableOpacity style={styles.buttonBuy}>
-            <Text style={styles.textButton}>Buy VDCS</Text>
-          </TouchableOpacity>
+          <Button text="Buy VDCS" />
         </View>
       </View>
     </View>

@@ -1,14 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {colors, images} from '../../theme';
+import {colors} from '../../theme';
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-  },
-  backgroundContainer: {
-    flex: 1,
-    height: 812,
-    // position: 'absolute',
   },
   buttonCan: {
     height: 56,
@@ -55,21 +50,11 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginRight: 8,
   },
-
   bottomContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  buttonBuy: {
-    width: 339,
-    height: 46,
-    backgroundColor: colors.app,
-    borderRadius: 23,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
   textHeader: {
     alignItems: 'center',
     fontSize: 26,
@@ -81,11 +66,6 @@ export default StyleSheet.create({
     fontSize: 19,
     fontWeight: '600',
     color: colors.app,
-  },
-  textButton: {
-    fontSize: 19,
-    fontWeight: '600',
-    color: '#FFF',
   },
   text17: {
     alignItems: 'center',

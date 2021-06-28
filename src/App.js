@@ -10,12 +10,14 @@ import {
   Button,
 } from 'react-native';
 
-import DepositOrBuy from './src/container/DepositOrBuy';
+import Deposit from './screens/Deposit';
+import Buy from './screens/Buy';
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
-      <DepositOrBuy />
+      {/* <Deposit /> */}
+      <Buy />
     </View>
   );
 };
