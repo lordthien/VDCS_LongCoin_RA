@@ -9,4 +9,6 @@ export const appImage = {
   plusCircle: require('./plus-circle.png'),
   plusCircle1: require('./plus-circle-1.png'),
   tick: require('./tick.png'),
+  clock: require('./clock.png'),
+  cross: require('./cross.png'),
 };

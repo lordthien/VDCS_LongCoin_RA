@@ -5,13 +5,14 @@ import {
   Modal,
   StatusBar,
   Pressable,
+  Text,
+  Image,
 } from 'react-native';
 import {appImage} from '../../../../Assets/Images';
 import {appData} from '../../../../Data';
 import Color from '../../../../Theme/Color';
 import {pxScale} from '../../../../Theme/Size';
 import styles from './styles';
-import {Text, Image} from 'react-native-elements';
 const FilterModal = ({
   closeModal,
   isVisible,

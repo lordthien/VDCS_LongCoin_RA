@@ -26,7 +26,7 @@ const choiceValue = [
   },
 ];
 
-const AllTransactionsScreen = () => {
+const AllTransactionsScreen = ({navigation}) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [choice, setChoice] = useState(choiceValue);
   const [data, setData] = useState(appData.transactionData);
@@ -44,7 +44,6 @@ const AllTransactionsScreen = () => {
   useEffect(() => {
     dataFilter();
   }, [choice]);
-
   const selectAll = () => {
     setChoice([]);
     choiceValue.forEach(item => {
@@ -77,6 +76,11 @@ const AllTransactionsScreen = () => {
         VND={item.VND}
         action={item.action}
         date={item.date}
+        onPress={() => {
+          navigation.navigate('TransactionDetailScreen', {
+            item: item,
+          });
+        }}
       />
     );
   };
@@ -97,6 +101,7 @@ const AllTransactionsScreen = () => {
           keyExtractor={(item, index) => {
             return index.toString();
           }}
+          showsVerticalScrollIndicator={false}
         />
       </View>
       <FilterModal

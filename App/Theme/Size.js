@@ -1,17 +1,17 @@
-import { Platform, Dimensions } from "react-native";
+import {Platform, Dimensions} from 'react-native';
 
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
-} from "react-native-responsive-screen";
+} from 'react-native-responsive-screen';
 
-import { RFValue } from "react-native-responsive-fontsize";
-import moment from "moment";
+import {RFValue} from 'react-native-responsive-fontsize';
+import moment from 'moment';
 
 // import axios from './axios';
 // import {countries} from '../constants';
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
+const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 
 // export const isIos = Platform.OS === 'ios';
 
@@ -44,8 +44,8 @@ export const pxScale = {
   },
 };
 
-export const numberWithCommas = (x) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+export const numberWithCommas = x => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 };
 
 // export const timezone = isIos
@@ -87,11 +87,11 @@ export const numberWithCommas = (x) => {
 //   },
 // };
 
-export const formatDay = (day) => {
-  return moment(day).format("ddd,MMM DD");
+export const formatDay = day => {
+  return moment(day).format('ddd,MMM DD');
 };
 export const numberDayBeatweenTwoDay = (from, to) => {
-  if (typeof from === "number" && typeof to === "number") {
+  if (typeof from === 'number' && typeof to === 'number') {
     const numberSecond = to - from;
     return numberSecond ? numberSecond / (60 * 60 * 24) / 1000 + 1 : 1;
   }

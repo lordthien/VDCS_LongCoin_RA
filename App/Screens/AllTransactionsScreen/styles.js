@@ -9,10 +9,16 @@ export default StyleSheet.create({
     // backgroundColor: 'yellow',
   },
   transactionView: {
-    height: pxScale.hp(812),
+    // height: pxScale.hp(812),
+    flex: 1,
     marginTop: pxScale.hp(38),
     backgroundColor: 'white',
     borderRadius: pxScale.wp(20),
-    paddingTop: pxScale.hp(22),
+    paddingVertical: pxScale.hp(22),
+    // marginBottom: pxScale.hp(50),
+  },
+  bottom: {
+    height: pxScale.hp(50),
+    marginTop: pxScale.hp(22),
   },
 });

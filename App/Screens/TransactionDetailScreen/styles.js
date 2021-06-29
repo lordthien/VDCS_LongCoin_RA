@@ -11,7 +11,7 @@ export default StyleSheet.create({
     marginTop: pxScale.hp(68),
     backgroundColor: 'white',
     borderRadius: pxScale.wp(20),
-    paddingTop: pxScale.hp(22),
+    paddingVertical: pxScale.hp(22),
     // alignItems: 'center',
     // paddingLeft: pxScale.wp(32),
   },
