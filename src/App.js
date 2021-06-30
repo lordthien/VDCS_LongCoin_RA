@@ -3,14 +3,16 @@ import {ScrollView, View} from 'react-native';
 
 import Deposit from './screens/Deposit';
 import Buy from './screens/Buy';
-import WithdrawScanQRCode from './screens/WithdrawScanQRCode';
+import ScanQRCode from './screens/Withdraw/ScanQRCode';
+import Confirmation from './screens/Withdraw/Confirmation';
 
 const App = () => {
   return (
     <View style={{flex: 1}}>
       {/* <Deposit /> */}
       {/* <Buy /> */}
-      <WithdrawScanQRCode />
+      {/* <ScanQRCode /> */}
+      <Confirmation />
     </View>
   );
 };

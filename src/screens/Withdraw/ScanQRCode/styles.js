@@ -13,17 +13,6 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  headerContainer: {
-    width: 335,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginTop: 60,
-  },
-  backButton: {
-    height: 24,
-    width: 24,
-  },
   frameContainer: {
     flex: 1,
     height: 265,
@@ -44,11 +33,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  textHeader: {
-    fontSize: 26,
-    color: '#FFF',
-    fontWeight: '600',
-  },
+
   text: {
     fontSize: 15,
     color: '#FFF',

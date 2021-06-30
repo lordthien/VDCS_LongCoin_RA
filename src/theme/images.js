@@ -11,5 +11,7 @@ export default {
   zalopay: require('../assets/image/zalopay.png'),
   frame: require('../assets/image/qrcode/frame.png'),
   scan: require('../assets/image/qrcode/scan.png'),
-  back: require('../assets/image/back.png'),
+  backWhite: require('../assets/image/backWhite.png'),
+  backBlack: require('../assets/image/backBlack.png'),
+  lineWithdraw: require('../assets/image/Withdrawal/Step3/Line.png'),
 };

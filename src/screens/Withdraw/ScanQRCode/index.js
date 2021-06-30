@@ -1,26 +1,16 @@
 import React from 'react';
-import {
-  Text,
-  View,
-  Image,
-  ImageBackground,
-  TouchableOpacity,
-} from 'react-native';
-import {images} from '../../theme';
+import {Text, View, Image, ImageBackground} from 'react-native';
+import {images} from '../../../theme';
 import styles from './styles';
-import Button from '../../component/DepositOrBuy/Button';
+import Button from '../../../component/Button';
+import Header from '../../../component/Header/HeaderWhite';
 
 export default function index() {
   return (
-    // <View style={styles.container}>
     <ImageBackground source={images.scan} style={styles.backGround}>
       <View style={styles.screenContainer}>
-        <View style={styles.headerContainer}>
-          <TouchableOpacity>
-            <Image source={images.back} style={styles.backButton} />
-          </TouchableOpacity>
-          <Text style={styles.textHeader}>Scan QR Code</Text>
-          <View>{}</View>
+        <View>
+          <Header text="Scan QR Code" />
         </View>
         <ImageBackground source={images.frame} style={styles.frameContainer}>
           <View style={styles.frame}>
@@ -33,6 +23,5 @@ export default function index() {
         </View>
       </View>
     </ImageBackground>
-    // </View>
   );
 }
